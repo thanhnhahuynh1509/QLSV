@@ -222,6 +222,10 @@
       <DependentUpon>EntityModel.edmx</DependentUpon>
       <LastGenOutput>EntityModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\11.png" />
+    <Resource Include="Images\10.png" />
+    <Resource Include="Images\bg2.jpg" />
+    <Resource Include="Images\bg1.jpg" />
     <Resource Include="Images\8.png" />
     <Resource Include="Images\9.png" />
     <Resource Include="Images\1.png" />

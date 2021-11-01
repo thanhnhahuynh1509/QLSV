@@ -83,7 +83,6 @@ namespace DoAnQLSV
         private void btnLop_Click(object sender, RoutedEventArgs e)
         {
             handelBtn(sender as Button);
-            backgroundMain.Background = new BrushConverter().ConvertFrom("#b3ecff") as Brush;
             objectView = classView;
             changeView.Text = "2";
         }
@@ -130,7 +129,6 @@ namespace DoAnQLSV
             objectView = new Intro();
             changeView.Text = "1";
         }
-
 
         private void ChangeView_TextChanged(object sender, TextChangedEventArgs e)
         {

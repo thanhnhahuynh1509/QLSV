@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DoAnQLSV"
         xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
         mc:Ignorable="d"
-        Title="Quản Lý Sinh Viên" Height="700" Width="1200"
+        Title="Quản Lý Sinh Viên" Height="700" Width="1210"
         AllowsTransparency="True"
         Background="Transparent"
         WindowStyle="None"
@@ -16,8 +16,8 @@
         Icon="./Images/6.png"
         Loaded="Window_Loaded">
 
-    <Border CornerRadius="10" ClipToBounds="True" Background="#132c33">
-        
+    <Border CornerRadius="10" ClipToBounds="True">
+
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -26,80 +26,83 @@
             </Grid.ColumnDefinitions>
 
             <!-- LEFT MENU -->
-            
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="4*"/>
-                </Grid.RowDefinitions>
-                
-                <Border Grid.RowSpan="2" CornerRadius="32,0,0,32">
-                   
-                </Border>
 
-                <!-- LOGO -->
-                
-                <StackPanel Orientation="Horizontal">
-                    <Border Background="#fff" Width="60" Height="60" CornerRadius="1000" Margin="25, 0, 0, 0"> 
-                        <Image Source="./Images/6.png" Width="60" />
+            <Border Background="#132c33" CornerRadius="10,0,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.RowSpan="2" >
+
                     </Border>
-                    <TextBlock Margin="10,55,0,55" 
+
+                    <!-- LOGO -->
+
+                    <StackPanel Orientation="Horizontal">
+                        <Border Background="#fff" Width="60" Height="60" CornerRadius="1000" Margin="25, 0, 0, 0">
+                            <Image Source="./Images/6.png" Width="60" />
+                        </Border>
+                        <TextBlock Margin="10,55,0,55" 
                                Text="MY CLASS" 
                                VerticalAlignment="Center" 
                                FontSize="25" 
                                FontWeight="Heavy"
                                Foreground="#fff"/>
-                </StackPanel>
+                    </StackPanel>
 
-                <!-- BUTTON MENU CONTAIN -->
+                    <!-- BUTTON MENU CONTAIN -->
 
-                <StackPanel Grid.Row="1">
+                    <StackPanel Grid.Row="1">
 
-                    <Button x:Name="btnLop" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnLop_Click">
-                        <Button.Content>
-                            <StackPanel Orientation="Horizontal">
-                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Group" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
-                                <TextBlock Text="Lớp" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
-                            </StackPanel>
-                        </Button.Content>
-                    </Button>
+                        <Button x:Name="btnLop" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnLop_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Group" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                    <TextBlock Text="Lớp" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
 
-                    <Button x:Name="btnGhiChu" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnGhiChu_Click">
-                        <Button.Content>
-                            <StackPanel Orientation="Horizontal">
-                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="AddressBook" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
-                                <TextBlock Text="Ghi Chú" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
-                            </StackPanel>
-                        </Button.Content>
-                    </Button>
+                        <Button x:Name="btnGhiChu" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnGhiChu_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="AddressBook" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                    <TextBlock Text="Ghi Chú" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
 
-                    <Button x:Name="btnCaiDat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnCaiDat_Click">
-                        <Button.Content>
-                            <StackPanel Orientation="Horizontal">
-                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Cog" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
-                                <TextBlock Text="Cài Đặt" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
-                            </StackPanel>
-                        </Button.Content>
-                    </Button>
+                        <Button x:Name="btnCaiDat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnCaiDat_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Cog" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                    <TextBlock Text="Cài Đặt" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
 
-                    <Button x:Name="btnDangXuat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnDangXuat_Click">
-                        <Button.Content>
-                            <StackPanel Orientation="Horizontal">
-                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="SignOut" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
-                                <TextBlock Text="Đăng Xuất" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
-                            </StackPanel>
-                        </Button.Content>
-                    </Button>
+                        <Button x:Name="btnDangXuat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnDangXuat_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="SignOut" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                    <TextBlock Text="Đăng Xuất" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
 
-                </StackPanel>
+                    </StackPanel>
 
-            </Grid>
+                </Grid>
+            </Border>
 
             
             <!-- RIGHT CONTENT -->
 
 
             <Border Background="#d9fce8" Grid.Column="1" CornerRadius="0,14,14,0" x:Name="backgroundMain">
+                
                 <Grid >
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>

@@ -77,3 +77,45 @@ C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Vie
 C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\GhiChuView.baml
 C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\SettingView.g.cs
 C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\SettingView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\DoAnQLSV.exe.config
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\DoAnQLSV.exe
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\DoAnQLSV.pdb
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\EntityFramework.dll
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\FontAwesome.WPF.dll
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\EntityFramework.xml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\bin\Debug\FontAwesome.WPF.xml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.AssemblyReference.cache
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.ResolveComReference.cache
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\ButtonTheme.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\LoginForm.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\MainWindow.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\ClassView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\GhiChuView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\InputClassView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\InputStudentView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\Intro.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\SettingView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\StudentView.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\App.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV_Content.g.cs
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.cache
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.lref
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\App.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\LoginForm.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\MainWindow.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\ClassView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\GhiChuView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\InputClassView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\InputStudentView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\Intro.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\SettingView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\Views\StudentView.baml
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.g.resources
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.Properties.Resources.resources
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.GenerateResource.cache
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.CoreCompileInputs.cache
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.CopyComplete
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.exe
+C:\Users\Nha\Desktop\QLSV\DoAnQLSV\obj\Debug\DoAnQLSV.pdb

@@ -48,7 +48,7 @@ namespace DoAnQLSV.Views
             l1.Content = text;
             l1.FontSize = 12;
             l1.FontWeight = FontWeights.Bold;
-            l1.Foreground = new BrushConverter().ConvertFrom("#0b1e59") as Brush;
+            l1.Foreground = new BrushConverter().ConvertFrom("#333") as Brush;
             l1.Width = 182;
             return l1;
         }

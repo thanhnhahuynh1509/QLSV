@@ -6,22 +6,23 @@
              xmlns:local="clr-namespace:DoAnQLSV.Views"
              xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="850"
+             d:DesignHeight="600" d:DesignWidth="900"
              FontFamily="r0c0i Linotte"
              Loaded="UserControl_Loaded">
 
     <Border>
         <Grid Margin="5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="450*"/>
-                <ColumnDefinition Width="391*"/>
+                <ColumnDefinition Width="71*"/>
+                <ColumnDefinition Width="405*"/>
+                <ColumnDefinition Width="414*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height=".2*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid Grid.ColumnSpan="2">
+            <Grid Grid.ColumnSpan="3" Margin="0,0,0,0.5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="15*"/>
                     <ColumnDefinition Width="14*"/>
@@ -30,7 +31,7 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="374,0">
                     <TextBlock Text="LỚP" 
                                FontWeight="Heavy" FontSize="50" 
-                               Foreground="#333" Margin="0,-30,0,20" 
+                               Foreground="#2b6670" Margin="0,-30,0,20" 
                                TextAlignment="Center"/>
                 </StackPanel>
 
@@ -48,14 +49,14 @@
                                  FontSize="20"
                                  Background="Transparent"
                                  BorderThickness="0"
-                                 CaretBrush="#1C7947"
+                                 CaretBrush="#2b6670"
                                  FontFamily="r0c0i Linotte"
-                                 Foreground="#1C7947"
+                                 Foreground="#2b6670"
                                  Margin="0,0,10,0"/>
-                    <fa:ImageAwesome Icon="Search" Height="15" Foreground="#39A388" HorizontalAlignment="Left"/>
+                    <fa:ImageAwesome Icon="Search" Height="15" Foreground="#2b6670" HorizontalAlignment="Left"/>
                 </StackPanel>
 
-                <Border Margin="10,66,0,30" BorderThickness="2" Width="280" Height="2" BorderBrush="#39A388" HorizontalAlignment="Left"/>
+                <Border Margin="10,66,0,30" BorderThickness="2" Width="280" Height="2" BorderBrush="#2b6670" HorizontalAlignment="Left"/>
 
                 <Button HorizontalAlignment="Right" 
                     Style="{StaticResource ButtonHadleCommon}"
@@ -68,30 +69,32 @@
                     Click="btnAddClass_Click" Grid.Column="1"/>
 
             </Grid>
-            <Image Source="../Images/9.png" Height="50" Width="50" Margin="310,26,89.5,22"/>
-            <Image Source="/DoAnQLSV;component/Images/5.png"  Width="50" Height="50" Margin="409,24,381,24" Grid.ColumnSpan="2"/>
-            <Image Source="/DoAnQLSV;component/Images/1.png"  Width="50" Height="50" Margin="28,427,371.5,15" Grid.Row="1"/>
-            <Image Source="/DoAnQLSV;component/Images/6.png"  Width="100" Height="100" Margin="370,159,370,233" Grid.Row="1" Grid.ColumnSpan="2"/>
-            <Image Source="/DoAnQLSV;component/Images/2.png"  Width="50" Height="50" Margin="265.5,321,75,121" Grid.Row="1" Grid.Column="1"/>
-            <Image Source="/DoAnQLSV;component/Images/3.png"  Height="50" Margin="60.5,27,280,21" Width="50" RenderTransformOrigin="-0.98,0.724" Grid.Column="1"/>
-            <Image Source="/DoAnQLSV;component/Images/8.png"  Width="50" Height="50" Margin="219.5,57,121,385" Grid.Row="1" Grid.Column="1"/>
-            <Image Source="/DoAnQLSV;component/Images/7.png"  Height="50" Margin="137,118,262.5,324" Width="50" RenderTransformOrigin="-0.98,0.724" Grid.Row="1"/>
+            <Image Source="../Images/9.png" Height="50" Width="50" Margin="252,26,103,22.5" Grid.Column="1"/>
+            <Image Source="/DoAnQLSV;component/Images/5.png"  Width="50" Height="50" Margin="363,24,406,24.5" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Image Source="/DoAnQLSV;component/Images/1.png"  Width="50" Height="50" Margin="41,427.5,385,14" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <Image Source="/DoAnQLSV;component/Images/6.png"  Width="100" Height="100" Margin="324,159.5,395,232" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Image Source="/DoAnQLSV;component/Images/2.png"  Width="50" Height="50" Margin="277,321.5,87,120" Grid.Row="1" Grid.Column="2"/>
+            <Image Source="/DoAnQLSV;component/Images/3.png"  Height="50" Margin="72,27,292,21.5" Width="50" RenderTransformOrigin="-0.98,0.724" Grid.Column="2"/>
+            <Image Source="/DoAnQLSV;component/Images/8.png"  Width="50" Height="50" Margin="231,57.5,133,384" Grid.Row="1" Grid.Column="2"/>
 
-            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
-                <WrapPanel  Orientation="Horizontal" Margin="10" x:Name="containButtonClass">
+            <Border Grid.ColumnSpan="3" Background="#fff" CornerRadius="6" Margin="0,98,0,0" Grid.RowSpan="2">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                    <WrapPanel Orientation="Horizontal" Margin="10" x:Name="containButtonClass">
 
-                    <Button Background="#9cff6e" Style="{StaticResource ButtonClass}">
-                        <Button.Content>
-                            <StackPanel>
-                                <Label Width="182" Foreground="#333" FontSize="12" FontWeight="Bold">Tên lớp: 19DTHD1 - 19DTHD2</Label>
-                                <Label FontSize="12" Foreground="#333" FontWeight="Bold">Môn:</Label>
-                                <Label FontSize="12" Foreground="#333" FontWeight="Bold">Buổi:</Label>
-                            </StackPanel>
-                        </Button.Content>
-                    </Button>
+                        <Button Background="#9cff6e" Style="{StaticResource ButtonClass}">
+                            <Button.Content>
+                                <StackPanel>
+                                    <Label Width="182" Foreground="#333" FontSize="12" FontWeight="Bold">Tên lớp: 19DTHD1 - 19DTHD2</Label>
+                                    <Label FontSize="12" Foreground="#333" FontWeight="Bold">Môn:</Label>
+                                    <Label FontSize="12" Foreground="#333" FontWeight="Bold">Buổi:</Label>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
 
-                </WrapPanel>
-            </ScrollViewer>
+                    </WrapPanel>
+                </ScrollViewer>
+            </Border>
+            <Image Source="/DoAnQLSV;component/Images/10.png" Height="60" Width="60" Margin="5,-31,6,69.5"/>
 
         </Grid>
     </Border>

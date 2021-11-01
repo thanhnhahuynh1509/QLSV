@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLSVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="maLop" />
+    </Key>
+    <Property Name="maLop" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenLop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="monHoc" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="buoi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mau" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="maTaiKhoan" Type="Int32" />
+    <NavigationProperty Name="TaiKhoan" Relationship="Self.FK__Lop__maTaiKhoan__398D8EEE" FromRole="Lop" ToRole="TaiKhoan" />
+    <NavigationProperty Name="SinhViens" Relationship="QLSVModel.FK__SinhVien__maLop__49C3F6B7" FromRole="Lop" ToRole="SinhVien" />
+  </EntityType>
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="maSinhVien" />
+      <PropertyRef Name="maLop" />
+    </Key>
+    <Property Name="maSinhVien" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="hoDem" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lop" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="gioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="sdt" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="phatBieu" Type="Int32" />
+    <Property Name="soBuoiVang" Type="Int32" />
+    <Property Name="soBuoiCoMat" Type="Int32" Nullable="false" />
+    <Property Name="maLop" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Lop" Relationship="QLSVModel.FK__SinhVien__maLop__49C3F6B7" FromRole="SinhVien" ToRole="Lop" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="maTaiKhoan" />
+    </Key>
+    <Property Name="maTaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="taiKhoan1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="matKhau" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Lops" Relationship="Self.FK__Lop__maTaiKhoan__398D8EEE" FromRole="TaiKhoan" ToRole="Lop" />
+    <Property Name="ghiChu" Type="String" MaxLength="3200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__Lop__maTaiKhoan__398D8EEE">
+    <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaiKhoan">
+        <PropertyRef Name="maTaiKhoan" />
+      </Principal>
+      <Dependent Role="Lop">
+        <PropertyRef Name="maTaiKhoan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLSVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Lops" EntityType="Self.Lop" />
+    <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+    <AssociationSet Name="FK__Lop__maTaiKhoan__398D8EEE" Association="Self.FK__Lop__maTaiKhoan__398D8EEE">
+      <End Role="TaiKhoan" EntitySet="TaiKhoans" />
+      <End Role="Lop" EntitySet="Lops" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SinhVien__maLop__49C3F6B7" Association="QLSVModel.FK__SinhVien__maLop__49C3F6B7">
+      <End Role="Lop" EntitySet="Lops" />
+      <End Role="SinhVien" EntitySet="SinhViens" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK__SinhVien__maLop__49C3F6B7">
+    <End Type="QLSVModel.Lop" Role="Lop" Multiplicity="1" />
+    <End Type="QLSVModel.SinhVien" Role="SinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="maLop" />
+      </Principal>
+      <Dependent Role="SinhVien">
+        <PropertyRef Name="maLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

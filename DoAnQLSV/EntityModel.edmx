@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QLSVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="maLop" />
+          </Key>
+          <Property Name="maLop" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tenLop" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="monHoc" Type="nvarchar" MaxLength="60" />
+          <Property Name="buoi" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="mau" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="maTaiKhoan" Type="int" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="maSinhVien" />
+            <PropertyRef Name="maLop" />
+          </Key>
+          <Property Name="maSinhVien" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="maLop" Type="int" Nullable="false" />
+          <Property Name="hoDem" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="ten" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="lop" Type="nvarchar" MaxLength="20" />
+          <Property Name="gioiTinh" Type="nvarchar" MaxLength="10" />
+          <Property Name="email" Type="nvarchar" MaxLength="30" />
+          <Property Name="sdt" Type="nvarchar" MaxLength="12" />
+          <Property Name="phatBieu" Type="int" />
+          <Property Name="soBuoiVang" Type="int" />
+          <Property Name="soBuoiCoMat" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="maTaiKhoan" />
+          </Key>
+          <Property Name="maTaiKhoan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="taiKhoan" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="matKhau" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="ghiChu" Type="nvarchar" MaxLength="3200" />
+        </EntityType>
+        <Association Name="FK__Lop__maTaiKhoan__2E1BDC42">
+          <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaiKhoan">
+              <PropertyRef Name="maTaiKhoan" />
+            </Principal>
+            <Dependent Role="Lop">
+              <PropertyRef Name="maTaiKhoan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SinhVien__maLop__30F848ED">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="maLop" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="maLop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLSVModelStoreContainer">
+          <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Lop__maTaiKhoan__2E1BDC42" Association="Self.FK__Lop__maTaiKhoan__2E1BDC42">
+            <End Role="TaiKhoan" EntitySet="TaiKhoan" />
+            <End Role="Lop" EntitySet="Lop" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SinhVien__maLop__30F848ED" Association="Self.FK__SinhVien__maLop__30F848ED">
+            <End Role="Lop" EntitySet="Lop" />
+            <End Role="SinhVien" EntitySet="SinhVien" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLSVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="maLop" />
+          </Key>
+          <Property Name="maLop" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tenLop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="monHoc" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="buoi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="mau" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="maTaiKhoan" Type="Int32" />
+          <NavigationProperty Name="TaiKhoan" Relationship="Self.FK__Lop__maTaiKhoan__398D8EEE" FromRole="Lop" ToRole="TaiKhoan" />
+          <NavigationProperty Name="SinhViens" Relationship="QLSVModel.FK__SinhVien__maLop__49C3F6B7" FromRole="Lop" ToRole="SinhVien" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="maSinhVien" />
+            <PropertyRef Name="maLop" />
+          </Key>
+          <Property Name="maSinhVien" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="hoDem" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ten" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="lop" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="gioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="sdt" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="phatBieu" Type="Int32" />
+          <Property Name="soBuoiVang" Type="Int32" />
+          <Property Name="soBuoiCoMat" Type="Int32" Nullable="false" />
+          <Property Name="maLop" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Lop" Relationship="QLSVModel.FK__SinhVien__maLop__49C3F6B7" FromRole="SinhVien" ToRole="Lop" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="maTaiKhoan" />
+          </Key>
+          <Property Name="maTaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="taiKhoan1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="matKhau" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Lops" Relationship="Self.FK__Lop__maTaiKhoan__398D8EEE" FromRole="TaiKhoan" ToRole="Lop" />
+          <Property Name="ghiChu" Type="String" MaxLength="3200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK__Lop__maTaiKhoan__398D8EEE">
+          <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaiKhoan">
+              <PropertyRef Name="maTaiKhoan" />
+            </Principal>
+            <Dependent Role="Lop">
+              <PropertyRef Name="maTaiKhoan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLSVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Lops" EntityType="Self.Lop" />
+          <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+          <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+          <AssociationSet Name="FK__Lop__maTaiKhoan__398D8EEE" Association="Self.FK__Lop__maTaiKhoan__398D8EEE">
+            <End Role="TaiKhoan" EntitySet="TaiKhoans" />
+            <End Role="Lop" EntitySet="Lops" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SinhVien__maLop__49C3F6B7" Association="QLSVModel.FK__SinhVien__maLop__49C3F6B7">
+            <End Role="Lop" EntitySet="Lops" />
+            <End Role="SinhVien" EntitySet="SinhViens" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK__SinhVien__maLop__49C3F6B7">
+          <End Type="QLSVModel.Lop" Role="Lop" Multiplicity="1" />
+          <End Type="QLSVModel.SinhVien" Role="SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="maLop" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="maLop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLSVModelStoreContainer" CdmEntityContainer="QLSVEntities">
+          <EntitySetMapping Name="Lops">
+            <EntityTypeMapping TypeName="QLSVModel.Lop">
+              <MappingFragment StoreEntitySet="Lop">
+                <ScalarProperty Name="maLop" ColumnName="maLop" />
+                <ScalarProperty Name="tenLop" ColumnName="tenLop" />
+                <ScalarProperty Name="monHoc" ColumnName="monHoc" />
+                <ScalarProperty Name="buoi" ColumnName="buoi" />
+                <ScalarProperty Name="mau" ColumnName="mau" />
+                <ScalarProperty Name="maTaiKhoan" ColumnName="maTaiKhoan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SinhViens">
+            <EntityTypeMapping TypeName="QLSVModel.SinhVien">
+              <MappingFragment StoreEntitySet="SinhVien">
+                <ScalarProperty Name="maLop" ColumnName="maLop" />
+                <ScalarProperty Name="maSinhVien" ColumnName="maSinhVien" />
+                <ScalarProperty Name="hoDem" ColumnName="hoDem" />
+                <ScalarProperty Name="ten" ColumnName="ten" />
+                <ScalarProperty Name="lop" ColumnName="lop" />
+                <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="sdt" ColumnName="sdt" />
+                <ScalarProperty Name="phatBieu" ColumnName="phatBieu" />
+                <ScalarProperty Name="soBuoiVang" ColumnName="soBuoiVang" />
+                <ScalarProperty Name="soBuoiCoMat" ColumnName="soBuoiCoMat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaiKhoans">
+            <EntityTypeMapping TypeName="QLSVModel.TaiKhoan">
+              <MappingFragment StoreEntitySet="TaiKhoan">
+                <ScalarProperty Name="ghiChu" ColumnName="ghiChu" />
+                <ScalarProperty Name="maTaiKhoan" ColumnName="maTaiKhoan" />
+                <ScalarProperty Name="taiKhoan1" ColumnName="taiKhoan" />
+                <ScalarProperty Name="matKhau" ColumnName="matKhau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

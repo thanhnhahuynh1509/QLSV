@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLSVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="maLop" />
+    </Key>
+    <Property Name="maLop" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenLop" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="monHoc" Type="nvarchar" MaxLength="60" />
+    <Property Name="buoi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="mau" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="maTaiKhoan" Type="int" />
+  </EntityType>
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="maSinhVien" />
+      <PropertyRef Name="maLop" />
+    </Key>
+    <Property Name="maSinhVien" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="maLop" Type="int" Nullable="false" />
+    <Property Name="hoDem" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="lop" Type="nvarchar" MaxLength="20" />
+    <Property Name="gioiTinh" Type="nvarchar" MaxLength="10" />
+    <Property Name="email" Type="nvarchar" MaxLength="30" />
+    <Property Name="sdt" Type="nvarchar" MaxLength="12" />
+    <Property Name="phatBieu" Type="int" />
+    <Property Name="soBuoiVang" Type="int" />
+    <Property Name="soBuoiCoMat" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="maTaiKhoan" />
+    </Key>
+    <Property Name="maTaiKhoan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="taiKhoan" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="matKhau" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ghiChu" Type="nvarchar" MaxLength="3200" />
+  </EntityType>
+  <Association Name="FK__Lop__maTaiKhoan__2E1BDC42">
+    <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaiKhoan">
+        <PropertyRef Name="maTaiKhoan" />
+      </Principal>
+      <Dependent Role="Lop">
+        <PropertyRef Name="maTaiKhoan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SinhVien__maLop__30F848ED">
+    <End Role="Lop" Type="Self.Lop" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="maLop" />
+      </Principal>
+      <Dependent Role="SinhVien">
+        <PropertyRef Name="maLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLSVModelStoreContainer">
+    <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Lop__maTaiKhoan__2E1BDC42" Association="Self.FK__Lop__maTaiKhoan__2E1BDC42">
+      <End Role="TaiKhoan" EntitySet="TaiKhoan" />
+      <End Role="Lop" EntitySet="Lop" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SinhVien__maLop__30F848ED" Association="Self.FK__SinhVien__maLop__30F848ED">
+      <End Role="Lop" EntitySet="Lop" />
+      <End Role="SinhVien" EntitySet="SinhVien" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

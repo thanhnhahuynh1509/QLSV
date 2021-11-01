@@ -1,0 +1,79 @@
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\DoAnQLSV.exe.config
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\DoAnQLSV.exe
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\DoAnQLSV.pdb
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\MainWindow.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\App.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.cache
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.lref
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\MainWindow.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.g.resources
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.Properties.Resources.resources
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.GenerateResource.cache
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.exe
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.pdb
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\FontAwesome.WPF.dll
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\FontAwesome.WPF.xml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\App.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.CopyComplete
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\ClassView.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\ClassView.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\ButtonTheme.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\LoginForm.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\LoginForm.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\EntityFramework.dll
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\EntityFramework.xml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV_Content.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\InputClassView.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\InputClassView.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\Intro.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\Intro.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\StudentView.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\StudentView.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\InputStudentView.g.cs
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\Views\InputStudentView.baml
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.AssemblyReference.cache
+C:\Users\thanh\Desktop\C#\DoAnQLSV\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.ResolveComReference.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\DoAnQLSV.exe.config
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\DoAnQLSV.exe
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\DoAnQLSV.pdb
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\EntityFramework.dll
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\FontAwesome.WPF.dll
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\EntityFramework.xml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\bin\Debug\FontAwesome.WPF.xml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.AssemblyReference.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.ResolveComReference.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\ButtonTheme.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\LoginForm.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\MainWindow.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\ClassView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\InputClassView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\InputStudentView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\Intro.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\StudentView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\App.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV_Content.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV_MarkupCompile.lref
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\App.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\LoginForm.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\MainWindow.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\ClassView.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\InputClassView.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\InputStudentView.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\Intro.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\StudentView.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.g.resources
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.Properties.Resources.resources
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.GenerateResource.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.csproj.CoreCompileInputs.cache
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.exe
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\DoAnQLSV.pdb
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\GhiChuView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\GhiChuView.baml
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\SettingView.g.cs
+C:\Users\nguyen huu quy\Desktop\DoAnQuanLySinhVien-master\DoAnQLSV\obj\Debug\Views\SettingView.baml

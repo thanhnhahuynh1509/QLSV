@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLSVModelStoreContainer" CdmEntityContainer="QLSVEntities">
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="QLSVModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="maLop" ColumnName="maLop" />
+          <ScalarProperty Name="tenLop" ColumnName="tenLop" />
+          <ScalarProperty Name="monHoc" ColumnName="monHoc" />
+          <ScalarProperty Name="buoi" ColumnName="buoi" />
+          <ScalarProperty Name="mau" ColumnName="mau" />
+          <ScalarProperty Name="maTaiKhoan" ColumnName="maTaiKhoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="QLSVModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="maLop" ColumnName="maLop" />
+          <ScalarProperty Name="maSinhVien" ColumnName="maSinhVien" />
+          <ScalarProperty Name="hoDem" ColumnName="hoDem" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="lop" ColumnName="lop" />
+          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="phatBieu" ColumnName="phatBieu" />
+          <ScalarProperty Name="soBuoiVang" ColumnName="soBuoiVang" />
+          <ScalarProperty Name="soBuoiCoMat" ColumnName="soBuoiCoMat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiKhoans">
+      <EntityTypeMapping TypeName="QLSVModel.TaiKhoan">
+        <MappingFragment StoreEntitySet="TaiKhoan">
+          <ScalarProperty Name="ghiChu" ColumnName="ghiChu" />
+          <ScalarProperty Name="maTaiKhoan" ColumnName="maTaiKhoan" />
+          <ScalarProperty Name="taiKhoan1" ColumnName="taiKhoan" />
+          <ScalarProperty Name="matKhau" ColumnName="matKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

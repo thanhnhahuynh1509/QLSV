@@ -1,0 +1,148 @@
+﻿<Window x:Class="DoAnQLSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DoAnQLSV"
+        xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+        mc:Ignorable="d"
+        Title="Quản Lý Sinh Viên" Height="700" Width="1200"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        FontFamily="r0c0i Linotte"
+        Icon="./Images/6.png"
+        Loaded="Window_Loaded">
+
+    <Border CornerRadius="10" ClipToBounds="True" Background="#132c33">
+        
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- LEFT MENU -->
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                
+                <Border Grid.RowSpan="2" CornerRadius="32,0,0,32">
+                   
+                </Border>
+
+                <!-- LOGO -->
+                
+                <StackPanel Orientation="Horizontal">
+                    <Border Background="#fff" Width="60" Height="60" CornerRadius="1000" Margin="25, 0, 0, 0"> 
+                        <Image Source="./Images/6.png" Width="60" />
+                    </Border>
+                    <TextBlock Margin="10,55,0,55" 
+                               Text="MY CLASS" 
+                               VerticalAlignment="Center" 
+                               FontSize="25" 
+                               FontWeight="Heavy"
+                               Foreground="#fff"/>
+                </StackPanel>
+
+                <!-- BUTTON MENU CONTAIN -->
+
+                <StackPanel Grid.Row="1">
+
+                    <Button x:Name="btnLop" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnLop_Click">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Group" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                <TextBlock Text="Lớp" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="btnGhiChu" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnGhiChu_Click">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="AddressBook" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                <TextBlock Text="Ghi Chú" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="btnCaiDat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnCaiDat_Click">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="Cog" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                <TextBlock Text="Cài Đặt" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="btnDangXuat" Margin="0,20,0,20" Style="{StaticResource ButtonToolLeftMenu}" Click="btnDangXuat_Click">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Margin="0, 0 , 20, 0" Icon="SignOut" Width="20" HorizontalAlignment="Left" Foreground="#fff"/>
+                                <TextBlock Text="Đăng Xuất" VerticalAlignment="Center" FontSize="20" Foreground="#fff"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                </StackPanel>
+
+            </Grid>
+
+            
+            <!-- RIGHT CONTENT -->
+
+
+            <Border Background="#d9fce8" Grid.Column="1" CornerRadius="0,14,14,0" x:Name="backgroundMain">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="15*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- TOP MENU -->
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button x:Name="btnMinimize" Style="{StaticResource ButtonToolTopTheme}"
+                            Margin="0, 0, 5, 0"
+                            Background="#fff200"
+                            Click="btnMinimize_Click">
+
+                        </Button>
+
+                        <Button x:Name="btnMaximize" Style="{StaticResource ButtonToolTopTheme}"
+                            Margin="0, 0, 5, 0"
+                            Background="#32ff7e"
+                            Click="btnMaximize_Click">
+                        </Button>
+
+                        <Button x:Name="btnExit" Style="{StaticResource ButtonToolTopTheme}"
+                            Margin="0, 0, 15, 0"
+                            Background="#ff4d4d"
+                            Click="btnExit_Click">
+                        </Button>
+                    </StackPanel>
+
+                    <!-- Content-->
+                    <Border Grid.Row="1" CornerRadius="10, 10, 10, 10" Margin="20,0,15,15">
+                        <ContentControl Content="{Binding}"/>
+                    </Border>
+
+                </Grid>
+            </Border>
+
+
+            
+            
+            
+        </Grid>
+
+    </Border>
+
+</Window>
